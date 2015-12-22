@@ -6,7 +6,7 @@ namespace RestaurantManager.Models
     {
         protected override void OnDataLoaded()
         {
-
+            this.NotifyPropertyChanged("OrderItems");
         }
 
         public List<Order> OrderItems
